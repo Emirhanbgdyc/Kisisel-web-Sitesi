@@ -1,6 +1,6 @@
 # Bu Site Kendim Düşünüp Ortaya Çıkardığım bir sitedir.
 
-# KUllanılan Program Dilleri
+ Kullanılan Program Dilleri :
 
 * HTML VE BOOSTRAP
 * CSS
