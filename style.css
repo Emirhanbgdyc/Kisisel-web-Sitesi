@@ -10,9 +10,25 @@ body{
 .navbar-menu{
     background-color: #1e1e30;
     height: 75px;
+    position: fixed;
+  padding: 10px 20px;
+  top: 0;
+  left: 0;
+  transition: all 0.3s ease-in-out;
     
 }
 
+.navbar-menu.move{
+    background-color:  #2E294E;
+}
+.navbar-menu.move .navbar-title {
+    font-family: 'Times New Roman', Times, serif;
+    /* color: ; */
+}
+
+.navbar-menu.move .navbar-text-menu ul a{
+    color:white;
+}
 
 .navbar-menu.sticky-top {
     position: -webkit-sticky;
@@ -26,7 +42,8 @@ body{
 .navbar-menu .navbar-title{
     text-decoration: none;
     color: white;
-    font-size: 24px;
+    font-size: clamp(24px , 2vw,40px);
+    /* font-size: 24px; */
     font-weight: bold;
     margin-right: -100px;
 }
