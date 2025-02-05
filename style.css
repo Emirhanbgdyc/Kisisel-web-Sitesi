@@ -624,9 +624,7 @@ body{
     .custom-button{
         font-size: 10px;
     }
-    /* .navbar-text-menu ul{
-        display: none;
-    } */
+
     .navbar-text-menu .nav {
         flex-direction: column;
         background-color:#333;
@@ -684,9 +682,7 @@ body{
 .section-vesionary{
     height: 150vh;
 }
-/* .navbar-text-menu ul{
-    display: none;
-} */
+
 .section-home .home-text .home-h2-onee{
     font-size: 40px;
     margin-top: 30px;
@@ -726,9 +722,7 @@ body{
     .section-vesionary .section-vesionary-text h2{
         margin-top: 100px;
     }
-    /* .navbar-text-menu ul{
-        display: none;
-    } */
+
     .navbar-text-menu .nav {
         flex-direction: column;
         background-color:#333;
@@ -772,10 +766,8 @@ body{
         font-size: 40px;
         margin-top: 30px;
     }
-/* 
-    .navbar-text-menu ul{
-        display: none;
-    } */
+
+  
     
     .section-skills{
         height: 100vh;
@@ -820,14 +812,15 @@ body{
 
 @media only screen and (min-width: 576px) and (max-width: 767.50px){
 
+    /* .icon {
+        display: block !important;
+    } */
+
     .section-home .home-text .home-h2-onee{
         font-size: 40px;
         margin-top: 30px;
     }
 
-    /* .navbar-text-menu ul{
-        display: none;
-    } */
 
     .section-home .home-text .home-h2-one{
         font-size: 40px;
