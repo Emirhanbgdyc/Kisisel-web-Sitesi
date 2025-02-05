@@ -11,3 +11,72 @@ window.addEventListener('scroll',()=>{
         navbarMenu.classList.remove('move');
     }
 });
+
+
+const buttonMenu= document.querySelectorAll(".custom-button");
+const productGrid = document.querySelector(".prdouct__grid");
+
+const product = {
+    "All" : [
+        {image :"resim/Sandbox.png",tagsp1:"HTML",tagsp2:"CSS",tagsp3:"Bootstrap",title :"Sandbox",date:"2024-Mayıs",projelers:"Sandbox, bootstrap ile oluşturmuş olduğum ilk mobile duyarlı projemdir."},
+        {image :"resim/Coffe.png",tagsp1:"HTML",tagsp2:"CSS",tagsp3:"JavaScript",title :"Coffee",date:"2024-Subat",projelers:"Coffee,Html Css ve JavaScript ile yapmış olduğum bir projedir."},
+        {image :"resim/Hisar.png",tagsp1:"HTML",tagsp2:"CSS",tagsp1:"JavaScript",title :"Hisar",date:"2024-Subat",projelers:"Hisar,yazılama başladığım zaman oluşturduğum bir projedir."},
+        {image :"resim/KoruOtel.png",tagsp1:"HTML",tagsp2:"CSS",title :"Koru Otel",date:"2024-Temmuz",projelers:"Koru Otel,stajımda bana verilen ilk projedir."},
+    ],
+    "WEBSITE" : [
+        {image :"resim/Sandbox.png",tagsp1:"HTML",tagsp2:"CSS",tagsp3:"Bootstrap",title :"Sandbox",date:"2024-Mayıs",projelers:"Sandbox, bootstrap ile oluşturmuş olduğum ilk mobile duyarlı projemdir."},
+        {image :"resim/Coffe.png",tagsp1:"HTML",tagsp2:"CSS",tagsp3:"JavaScript",title :"Coffee",date:"2024-Subat",projelers:"Coffee,Html Css ve JavaScript ile yapmış olduğum bir projedir."},
+        {image :"resim/Hisar.png",tagsp1:"HTML",tagsp2:"CSS",tagsp3:"JavaScript",title :"Hisar",date:"2024-Subat",projelers:"Hisar,yazılama başladığım zaman oluşturduğum bir projedir."},
+        {image :"resim/KoruOtel.png",tagsp1:"HTML",tagsp2:"CSS",title :"Koru Otel",date:"2024-Temmuz",projelers:"Koru Otel,stajımda bana verilen ilk projedir."},
+        {image :"resim/Portofolio.png",tagsp1:"HTML",tagsp2:"CSS",title :"Portfolio",date:"2023-Aralık",projelers:"Portfolio,stajımda bana verilen ilk projedir."},
+    ],
+    "WEB-APPS" : [
+        {image :"resim/Sandbox.png",tagsp1:"HTML",tagsp2:"CSS",tagsp3:"Bootstrap",title :"Sandbox",date:"2024-Mayıs",projelers:"Sandbox, bootstrap ile oluşturmuş olduğum ilk mobile duyarlı projemdir."},
+        {image :"resim/Coffe.png",tagsp1:"HTML",tagsp2:"CSS",tagsp3:"JavaScript",title :"Coffee",date:"2024-Subat",projelers:"Coffee,Html Css ve JavaScript ile yapmış olduğum bir projedir."},
+    ],
+    "LANDING PAGE" : [
+        {image :"resim/Sandbox.png",tagsp1:"HTML",tagsp2:"CSS",tagsp3:"Bootstrap",title :"Sandbox",date:"2024-Mayıs",projelers:"Sandbox, bootstrap ile oluşturmuş olduğum ilk mobile duyarlı projemdir."},
+        {image :"resim/KoruOtel.png",tagsp1:"HTML",tagsp2:"CSS",title :"Koru Otel",date:"2024-Temmuz",projelers:"Koru Otel,stajımda bana verilen ilk projedir."},
+        {image :"resim/Coffe.png",tagsp1:"HTML",tagsp2:"CSS",tagsp3:"JavaScript",title :"Coffee",date:"2024-Subat",projelers:"Coffee,Html Css ve JavaScript ile yapmış olduğum bir projedir."},
+    ],
+};
+
+
+let activeCategory = null;
+
+
+buttonMenu.forEach((button) =>{
+    button.addEventListener("click",()=>{
+        const category = button.textContent.trim();
+
+
+        if(activeCategory ===category){
+            productGrid.innerHTML = "";
+            activeCategory=null;
+        }else{
+            activeCategory =category;
+            productGrid.innerHTML = "";
+            const productHTML = product[category]
+            .map((product)=>{
+                return `<div class="col-md-6 col-xl-4">
+            <div class="card card-projelers">
+              <div class="card-img">
+               <a href="https://sandboxornekproje.netlify.app"> <img src="${product.image}" alt="" class="img-fluid"></a>
+              </div>
+              <div class="card-body">
+                <div class="tags">
+                  <span class="tags-p1">${product.tagsp1}</span>
+                  <span class="tags-p1">${product.tagsp2}</span>
+                  <span class="tags-p1">Bootstrap</span>
+                </div>
+                <h5 class="card-title">Sandbox</h5>
+                <span class="date">2024-Mayıs</span>
+                <p class="projelers-p">Sandbox, bootstrap ile oluşturmuş olduğum ilk mobile duyarlı projemdir.
+                </p>
+              </div>
+            </div>
+          </div>`
+            })
+        }
+    });
+})
