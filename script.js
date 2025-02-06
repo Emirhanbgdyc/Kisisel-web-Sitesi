@@ -87,13 +87,17 @@ buttonMenu.forEach((button) => {
 });
 
 
-const  Active = document.querySelectorAll(".custom-button")
+const buttons = document.querySelectorAll(".custom-button");
 
+buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+        removeActive();
+        button.classList.add("active");
+    });
+});
 
-    Active.forEach((active)=>{
-        active.addEventListener("click",(active)=>{
-            active.classList.add("active");
-
-            removeActive();
-        })
-    })
+function removeActive() {
+    buttons.forEach((button) => {
+        button.classList.remove("active");
+    });
+}
