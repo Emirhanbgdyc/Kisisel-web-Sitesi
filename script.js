@@ -89,4 +89,11 @@ buttonMenu.forEach((button) => {
 
 const  Active = document.querySelectorAll(".custom-button")
 
-console.log(Active);
+
+    Active.forEach((active)=>{
+        active.addEventListener("click",(active)=>{
+            active.classList.add("active");
+
+            removeActive();
+        })
+    })
