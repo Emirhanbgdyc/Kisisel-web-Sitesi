@@ -373,33 +373,36 @@ body{
     color:#fff;
 }
 .custom-button {
-    border: none; /* Varsayılan buton sınırını kaldır */
-    color: #6C63FF; /* Buton yazı rengi */
+    transition: all 0.3s ease-in-out;
+    border: none;
+    color: #6C63FF; 
     font-family: italic;
-    background-color: transparent; /* Şeffaf arka plan */
-    margin: 0 10px; /* Butonlar arasına boşluk ekle */
-    position: relative; /* Çizgiler için gerekli */
+    background-color: transparent; 
+    margin: 0 10px;
+    position: relative; 
 }
 
 .custom-button:not(:last-child)::after {
-    content: ''; /* Pseudo-element oluştur */
+    content: ''; 
     position: absolute; 
     top: 50%;
-    right: -15px; /* Çizginin sağa hizalanması için */
+    right: -15px; 
     transform: translateY(-50%);
-    width: 1px; /* Çizginin genişliği */
-    height: 45px; /* Çizginin yüksekliği */
-    background-color: #6a0dad; /* Çizginin rengi */
+    width: 1px; 
+    height: 45px; 
+    background-color: #6a0dad; 
 }
 
 .custom-button.active {
-    border-bottom: 2px solid #6C63FF; /* Aktif butona alt çizgi ekle */
+    border-bottom: 2px solid #6C63FF;
+    color: white;
+    transform: scale(1.1);
 }
 
 
 .card {
-    border-radius: 15px; /* Rounded corners for the card */
-    overflow: hidden; /* Ensures the image fits within the rounded corners */
+    border-radius: 15px; 
+    overflow: hidden; 
     height: 450px;
     background-color: #2E294E;
     margin-top: 40px;
@@ -408,9 +411,9 @@ body{
   
   
   .card-img img {
-    object-fit: cover; /* Ensures the image covers the card area */
-    width: 90%; /* Ensures the image takes the full width of the card */
-    height: 200px; /* Set a fixed height for uniform appearance */
+    object-fit: cover; 
+    width: 90%; 
+    height: 200px;
     margin-left: 20px;
     margin-top: 15px;
     border-radius: 20px;
