@@ -30,6 +30,7 @@ const product = {
         {image :"resim/Coffe.png",tagsp1:"HTML",tagsp2:"CSS",tagsp3:"JavaScript",title :"Coffee",date:"2024-Subat",projelers:"Coffee,Html Css ve JavaScript ile yapmış olduğum bir projedir."},
         {image :"resim/Hisar.png",tagsp1:"HTML",tagsp2:"CSS",tagsp3:"JavaScript",title :"Hisar",date:"2024-Subat",projelers:"Hisar,yazılama başladığım zaman oluşturduğum bir projedir."},
         {image :"resim/KoruOtel.png",tagsp1:"HTML",tagsp2:"CSS",title :"Koru Otel",date:"2024-Temmuz",projelers:"Koru Otel,stajımda bana verilen ilk projedir."},
+        {image :"resim/Landpick.png",tagsp1:"HTML",tagsp2:"CSS",tagsp2:"JavaScript",title :"Landpick",date:"2024-Temmuz",projelers:"Landpick,stajımda bana verilen ilk projedir."},
         {image :"resim/Portofolio.png",tagsp1:"HTML",tagsp2:"CSS",title :"Portfolio",date:"2023-Aralık",projelers:"Portfolio,stajımda bana verilen ilk projedir."},
     ],
     "WEB-APPS" : [
