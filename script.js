@@ -44,49 +44,55 @@ const product = {
 };
 
 
-let activeCategory = null;
+let activeCategory = "ALL"; 
 
+const renderProducts = (category)=>{
+    const productHTML = product[category]
+    .map((product) => {
+        return `<div class="col-md-6 col-xl-4">
+            <div class="card card-projelers">
+                <div class="card-img">
+                    <a href="https://sandboxornekproje.netlify.app">
+                        <img src="${product.image}" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <div class="card-body">
+                    <div class="tags">
+                        <span class="tags-p1">${product.tagsp1}</span>
+                        <span class="tags-p1">${product.tagsp2}</span>
+                        ${product.tagsp3 ? `<span class="tags-p1">${product.tagsp3}</span>` : ''}
+                    </div>
+                    <h5 class="card-title">${product.title}</h5>
+                    <span class="date">${product.date}</span>
+                    <p class="projelers-p">${product.projelers}</p>
+                </div>
+            </div>
+        </div>`;
+    })
+    .join("");
+
+productGrid.innerHTML = productHTML;
+}
 
 buttonMenu.forEach((button) => {
     button.addEventListener("click", () => {
         const category = button.textContent.trim();
-
-        if (activeCategory === category) {
-            productGrid.innerHTML = "";
-            activeCategory = null;
-        } else {
-            activeCategory = category;
-            productGrid.innerHTML = "";
-            const productHTML = product[category]
-                .map((product) => {
-                    return `<div class="col-md-6 col-xl-4">
-                      <div class="card card-projelers">
-                        <div class="card-img">
-                          <a href="https://sandboxornekproje.netlify.app">
-                            <img src="${product.image}" alt="" class="img-fluid">
-                          </a>
-                        </div>
-                        <div class="card-body">
-                          <div class="tags">
-                            <span class="tags-p1">${product.tagsp1}</span>
-                            <span class="tags-p1">${product.tagsp2}</span>
-                            <span class="tags-p1">${product.tagsp3 || ''}</span>
-                          </div>
-                          <h5 class="card-title">${product.title}</h5>
-                          <span class="date">${product.date}</span>
-                          <p class="projelers-p">${product.projelers}</p>
-                        </div>
-                      </div>
-                    </div>`;
-                })
-                .join("");
-            
-                
-            productGrid.innerHTML = productHTML;
-            
-        }
+        
+     
+        buttonMenu.forEach((btn)=>{
+            btn.classList.remove("active");
+        });
+      
+        button.classList.add("active");
+        
+        activeCategory = category;
+        renderProducts(category);
     });
 });
+
+
+renderProducts("ALL");
+
 
 
 
