@@ -80,11 +80,14 @@ buttonMenu.forEach((button) => {
                     </div>`;
                 })
                 .join("");
-
+            
+                
             productGrid.innerHTML = productHTML;
+            
         }
     });
 });
+
 
 
 const buttons = document.querySelectorAll(".custom-button");
@@ -101,3 +104,25 @@ function removeActive() {
         button.classList.remove("active");
     });
 }
+
+
+let vis= 50;
+
+const card__grid = document.querySelectorAll(".card__grid");
+
+function card__affect() {
+    card__grid.forEach((card) => {
+        const cardTop = card.getBoundingClientRect().top;
+
+        const windowHeight = window.innerHeight;
+
+        if (cardTop < windowHeight - vis) {
+            card.classList.add("visible");
+        }
+    });
+}
+
+window.addEventListener("scroll", card__affect);
+
+// Sayfa yüklendiğinde kart kontrolü
+document.addEventListener("DOMContentLoaded", card__affect);
