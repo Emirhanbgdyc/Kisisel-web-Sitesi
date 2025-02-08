@@ -18,30 +18,32 @@ const productGrid = document.querySelector(".prdouct__grid");
 
 const product = {
     "ALL": [
-        { image: "resim/Sandbox.png", tagsp1: "HTML", tagsp2: "CSS", tagsp3: "Bootstrap", title: "Sandbox", date: "2024-Mayıs", link: "https://sandboxornekproje.netlify.app", projelers: "Sandbox, bootstrap ile oluşturmuş olduğum ilk mobile duyarlı projemdir." },
+        { image: "resim/Sandbox.png", tagsp1: "HTML", tagsp2: "CSS", tagsp3: "Bootstrap", title: "Sandbox", date: "2024-Mayıs", link: "https://sandboxx-web.netlify.app/", projelers: "Sandbox, bootstrap ile oluşturmuş olduğum ilk mobile duyarlı projemdir." },
         { image: "resim/Coffe.png", tagsp1: "HTML", tagsp2: "CSS", tagsp3: "JavaScript", title: "Coffee", date: "2024-Subat", link: "https://coffeew.netlify.app", projelers: "Coffee,Html Css ve JavaScript ile yapmış olduğum bir projedir." },
         { image: "resim/Hisar.png", tagsp1: "HTML", tagsp2: "CSS", tagsp3: "JavaScript", title: "Hisar", date: "2024-Subat", link: "https://hisarpastanesi.netlify.app", projelers: "Hisar,yazılama başladığım zaman oluşturduğum bir projedir." },
         { image: "resim/Landpick.png", tagsp1: "HTML", tagsp2: "CSS", tagsp3: "JavaScript", title: "Landpick", date: "2024-Temmuz", link: "https://daynexbootstrap-2.netlify.app", projelers: "Landpick,stajımda bana verilen ilk projedir." },
-        { image: "resim/Portofolio.png", tagsp1: "HTML", tagsp2: "CSS", tagsp3: "", title: "Portfolio", date: "2023-Aralık", link: "https://coffeew.netlify.app", projelers: "Portfolio,stajımda bana verilen ilk projedir." },
+        { image: "resim/Portofolio.png", tagsp1: "HTML", tagsp2: "CSS", tagsp3: "", title: "Portfolio", date: "2023-Aralık", link: "https://emir-profil-card.netlify.app/", projelers: "Portfolio,stajımda bana verilen ilk projedir." },
+        { image: "resim/graphit.png", tagsp1: "HTML", tagsp2: "SASS", tagsp3: "JavaScript", title: "Graphit", date: "2024-Aralık",link:"https://graphitt.netlify.app/", projelers: "Graphit,Bu projede SASS kullanımını ve onla beraber Javascript kullanımını pekiştirdim." },
         { image: "resim/KoruOtel.png", tagsp1: "HTML", tagsp2: "CSS", tagsp3: "", title: "Koru Otel", date: "2024-Temmuz", link: "http://koruotellprojesi.netlify.app", projelers: "Koru Otel,stajımda bana verilen ilk projedir." },
     ],
     "WEBSITE": [
-        { image: "resim/Sandbox.png", tagsp1: "HTML", tagsp2: "CSS", tagsp3: "Bootstrap", title: "Sandbox", date: "2024-Mayıs", projelers: "Sandbox, bootstrap ile oluşturmuş olduğum ilk mobile duyarlı projemdir." },
-        { image: "resim/Coffe.png", tagsp1: "HTML", tagsp2: "CSS", tagsp3: "JavaScript", title: "Coffee", date: "2024-Subat", projelers: "Coffee,Html Css ve JavaScript ile yapmış olduğum bir projedir." },
-        { image: "resim/Hisar.png", tagsp1: "HTML", tagsp2: "CSS", tagsp3: "JavaScript", title: "Hisar", date: "2024-Subat", projelers: "Hisar,yazılama başladığım zaman oluşturduğum bir projedir." },
-        { image: "resim/KoruOtel.png", tagsp1: "HTML", tagsp2: "CSS", tagsp3: "", title: "Koru Otel", date: "2024-Temmuz", projelers: "Koru Otel,stajımda bana verilen ilk projedir." },
-        { image: "resim/Landpick.png", tagsp1: "HTML", tagsp2: "CSS", tagsp3: "JavaScript", title: "Graphit", date: "2024-Kasim", projelers: "Graphit, Bu proje sass kullanimi kendi basima ogrendigim projedir." },
-        { image: "resim/graphit.png", tagsp1: "HTML", tagsp2: "SASS", tagsp3: "JavaScript", title: "Landpick", date: "2024-Temmuz", projelers: "Landpick,stajımda bana verilen ilk projedir." },
-        { image: "resim/Portofolio.png", tagsp1: "HTML", tagsp2: "CSS", tagsp3: "", title: "Portfolio", date: "2023-Aralık", projelers: "Portfolio,stajımda bana verilen ilk projedir." },
+        { image: "resim/Sandbox.png", tagsp1: "HTML", tagsp2: "CSS", tagsp3: "Bootstrap", title: "Sandbox", date: "2024-Mayıs", link: "https://sandboxx-web.netlify.app/", projelers: "Sandbox, bootstrap ile oluşturmuş olduğum ilk mobile duyarlı projemdir." },
+        { image: "resim/Coffe.png", tagsp1: "HTML", tagsp2: "CSS", tagsp3: "JavaScript", title: "Coffee", date: "2024-Subat", link: "https://coffeew.netlify.app", projelers: "Coffee,Html Css ve JavaScript ile yapmış olduğum bir projedir." },
+        { image: "resim/Hisar.png", tagsp1: "HTML", tagsp2: "CSS", tagsp3: "JavaScript", title: "Hisar", date: "2024-Subat", link: "https://hisarpastanesi.netlify.app", projelers: "Hisar,yazılama başladığım zaman oluşturduğum bir projedir." },
+        { image: "resim/KoruOtel.png", tagsp1: "HTML", tagsp2: "CSS", tagsp3: "", title: "Koru Otel", date: "2024-Temmuz", link: "http://koruotellprojesi.netlify.app",  projelers: "Koru Otel,stajımda bana verilen ilk projedir." },
+        { image: "resim/Landpick.png", tagsp1: "HTML", tagsp2: "CSS", tagsp3: "JavaScript", title: "Graphit", date: "2024-Kasim",link: "https://daynexbootstrap-2.netlify.app", projelers: "Graphit, Bu proje sass kullanimi kendi basima ogrendigim projedir." },
+        { image: "resim/graphit.png", tagsp1: "HTML", tagsp2: "SASS", tagsp3: "JavaScript", title: "Graphit", date: "2024-Aralık",link:"https://graphitt.netlify.app/", projelers: "Graphit,Bu projede SASS kullanımını ve onla beraber Javascript kullanımını pekiştirdim." },
+        { image: "resim/Portofolio.png", tagsp1: "HTML", tagsp2: "CSS", tagsp3: "", title: "Portfolio", date: "2023-Aralık", link: "https://emir-profil-card.netlify.app/", projelers: "Portfolio,stajımda bana verilen ilk projedir." },
+        { image: "resim/film-sitesi.png", tagsp1: "HTML", tagsp2: "CSS", tagsp3: "", title: "Film-sitesi", date: "2023-Mayis", link: "https://filmm-web-sitesi.netlify.app/", projelers: "Film-Web-Sitesi, Bu site yazilama basladigimda ogrendigim basit bir film sitesidir.(Kullanimi yoktur.)" },
     ],
     "WEB-APPS": [
-        { image: "resim/Sandbox.png", tagsp1: "HTML", tagsp2: "CSS", tagsp3: "Bootstrap", title: "Sandbox", date: "2024-Mayıs", projelers: "Sandbox, bootstrap ile oluşturmuş olduğum ilk mobile duyarlı projemdir." },
-        { image: "resim/Coffe.png", tagsp1: "HTML", tagsp2: "CSS", tagsp3: "JavaScript", title: "Coffee", date: "2024-Subat", projelers: "Coffee,Html Css ve JavaScript ile yapmış olduğum bir projedir." },
+        { image: "resim/Sandbox.png", tagsp1: "HTML", tagsp2: "CSS", tagsp3: "Bootstrap", title: "Sandbox", date: "2024-Mayıs", link: "https://sandboxx-web.netlify.app/",  projelers: "Sandbox, bootstrap ile oluşturmuş olduğum ilk mobile duyarlı projemdir." },
+        { image: "resim/Coffe.png", tagsp1: "HTML", tagsp2: "CSS", tagsp3: "JavaScript", title: "Coffee", date: "2024-Subat",link: "https://coffeew.netlify.app",  projelers: "Coffee,Html Css ve JavaScript ile yapmış olduğum bir projedir." },
     ],
     "LANDING PAGE": [
-        { image: "resim/Sandbox.png", tagsp1: "HTML", tagsp2: "CSS", tagsp3: "Bootstrap", title: "Sandbox", date: "2024-Mayıs", projelers: "Sandbox, bootstrap ile oluşturmuş olduğum ilk mobile duyarlı projemdir." },
-        { image: "resim/KoruOtel.png", tagsp1: "HTML", tagsp2: "CSS", tagsp3: "", title: "Koru Otel", date: "2024-Temmuz", projelers: "Koru Otel,stajımda bana verilen ilk projedir." },
-        { image: "resim/Coffe.png", tagsp1: "HTML", tagsp2: "CSS", tagsp3: "JavaScript", title: "Coffee", date: "2024-Subat", projelers: "Coffee,Html Css ve JavaScript ile yapmış olduğum bir projedir." },
+        { image: "resim/Sandbox.png", tagsp1: "HTML", tagsp2: "CSS", tagsp3: "Bootstrap", title: "Sandbox", date: "2024-Mayıs", link: "https://sandboxx-web.netlify.app/",  projelers: "Sandbox, bootstrap ile oluşturmuş olduğum ilk mobile duyarlı projemdir." },
+        { image: "resim/KoruOtel.png", tagsp1: "HTML", tagsp2: "CSS", tagsp3: "", title: "Koru Otel", date: "2024-Temmuz",link: "http://koruotellprojesi.netlify.app",  projelers: "Koru Otel,stajımda bana verilen ilk projedir." },
+        { image: "resim/Coffe.png", tagsp1: "HTML", tagsp2: "CSS", tagsp3: "JavaScript", title: "Coffee", date: "2024-Subat",link: "https://coffeew.netlify.app",  projelers: "Coffee,Html Css ve JavaScript ile yapmış olduğum bir projedir." },
     ],
 };
 
