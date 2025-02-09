@@ -57,7 +57,7 @@ const renderProducts = (category)=>{
         return `<div class="col-md-6 col-xl-4">
             <div class="card card-projelers">
                 <div class="card-img">
-                    <a href="https://sandboxornekproje.netlify.app">
+                    <a href="${product.link}">
                         <img src="${product.image}" alt="" class="img-fluid">
                     </a>
                 </div>
@@ -135,5 +135,5 @@ function card__affect() {
 
 window.addEventListener("scroll", card__affect);
 
-// Sayfa yüklendiğinde kart kontrolü
+
 document.addEventListener("DOMContentLoaded", card__affect);
