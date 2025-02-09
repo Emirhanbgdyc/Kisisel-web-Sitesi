@@ -142,9 +142,16 @@ document.addEventListener("DOMContentLoaded", card__affect);
 
 
 //*********** */
+const homeBtn = document.querySelector(".Home__btn");
 
+homeBtn.addEventListener("mouseover", () => {
+  homeBtn.style.transform = "scale(1.1, 1.1)";
+  
+});
 
-
+homeBtn.addEventListener("mouseout", () => {
+  homeBtn.style.transform = "scale(1, 1)";
+});
 
 
 
