@@ -134,6 +134,19 @@ function card__affect() {
 }
 
 window.addEventListener("scroll", card__affect);
-
-
 document.addEventListener("DOMContentLoaded", card__affect);
+
+
+
+
+
+
+//*********** */
+
+
+
+
+
+
+
+
