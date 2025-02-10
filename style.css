@@ -92,9 +92,10 @@ body{
 }
 
 .section-home .home-text .devoloper{
-    color: #fff;
+    color: #6e52aa;
     font-size: 30px;
     margin-bottom: 5px;
+    font-weight: bold;
 }
 
 .section-home {

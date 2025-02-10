@@ -155,5 +155,24 @@ homeBtn.addEventListener("mouseout", () => {
 
 //*********** */
 
+//! YAZININ TEKRANLANMASI VE ANİMASYONLA ÇIKMASI
+
+const content = document.querySelector(".devoloper");
+let text ="Ben bir Front End Developercıyım";
+let speed =250;
+let idx=1;
 
 
+
+const writeContent=()=>{
+
+
+    content.innerHTML=text.slice(0,idx);
+    idx++;
+
+    if(idx > text.length){
+        idx =1;
+    }
+    setTimeout(writeContent,speed)
+};
+writeContent();
