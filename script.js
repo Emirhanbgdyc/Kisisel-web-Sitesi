@@ -37,7 +37,7 @@ const product = {
         { image: "resim/film-sitesi.png", tagsp1: "HTML", tagsp2: "CSS", tagsp3: "", title: "Film-sitesi", date: "2023-Mayis", link: "https://filmm-web-sitesi.netlify.app/", projelers: "Film-Web-Sitesi, Bu site yazilama basladigimda ogrendigim basit bir film sitesidir.(Kullanimi yoktur.)" },
     ],
     "WEB-APPS": [
-        { image: "resim/Sandbox.png", tagsp1: "HTML", tagsp2: "CSS", tagsp3: "Bootstrap", title: "Sandbox", date: "2024-Mayıs", link: "https://sandboxx-web.netlify.app/",  projelers: "Sandbox, bootstrap ile oluşturmuş olduğum ilk mobile duyarlı projemdir." },
+        { image: "resim/graphit.png", tagsp1: "HTML", tagsp2: "SASS", tagsp3: "JavaScript", title: "Graphit", date: "2024-Aralık",link:"https://graphitt.netlify.app/", projelers: "Graphit,Bu projede SASS kullanımını ve onla beraber Javascript kullanımını pekiştirdim." },
         { image: "resim/Coffe.png", tagsp1: "HTML", tagsp2: "CSS", tagsp3: "JavaScript", title: "Coffee", date: "2024-Subat",link: "https://coffeew.netlify.app",  projelers: "Coffee,Html Css ve JavaScript ile yapmış olduğum bir projedir." },
     ],
     "LANDING PAGE": [
@@ -153,7 +153,7 @@ homeBtn.addEventListener("mouseout", () => {
   homeBtn.style.transform = "scale(1, 1)";
 });
 
-
+//*********** */
 
 
 
