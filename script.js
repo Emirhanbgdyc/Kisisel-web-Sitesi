@@ -176,3 +176,19 @@ const writeContent=()=>{
     setTimeout(writeContent,speed)
 };
 writeContent();
+
+document.addEventListener("DOMContentLoaded", function () {
+    const menu = document.querySelector(".navbar-text-menu");
+    const toggleButton = document.querySelector(".navbar-toggler");
+
+    toggleButton.addEventListener("click", function () {
+        menu.classList.toggle("show");
+    });
+
+ //!Sayfada baska yere tiklaninca kapanmasi
+    document.addEventListener("click", function (e) {
+        if (!toggleButton.contains(e.target) && !menu.contains(e.target)) {
+            menu.classList.remove("show");
+        }
+    });
+});

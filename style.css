@@ -1,9 +1,10 @@
 
 
+
+
 body{
     background-color: #1e1e30; 
     color: #fff; 
- 
 }
 
 
@@ -71,6 +72,10 @@ body{
     color: #fff;
 }
 
+#moon{
+    font-size:30px ;
+}
+
 
 
 
@@ -92,7 +97,7 @@ body{
 }
 
 .section-home .home-text .devoloper{
-    color: #6e52aa;
+    color: #3b2864;
     font-size: 30px;
     margin-bottom: 5px;
     font-weight: bold;
@@ -667,22 +672,74 @@ body{
         font-size: 10px;
     }
 
-    .navbar-text-menu .nav {
-        flex-direction: column;
-        background-color:#333;
-        height: 300px;
-        width: 200px;
-        margin-left: auto;
-        border-radius: 50px;
-        margin-top: 40px;
-       
+    .navbar-text-menu {
+        position: absolute;
+        top: 70px; 
+        right: 20px; 
+        width: 220px;
+        background: rgba(0, 0, 0, 0.8); 
+        backdrop-filter: blur(10px);
+        border-radius: 15px; 
+        padding: 15px 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: all 0.3s ease-in-out;
+        visibility: hidden;
+    }
+    
+   
+    .navbar-text-menu.show {
+        opacity: 1;
+        transform: translateY(0);
+        visibility: visible;
+    }
+    
+   
+    .nav-item {
+        text-align: center;
+        margin: 10px 0;
+    }
+    
+    .nav-link {
+        color: white;
+        font-size: 18px;
+        text-decoration: none;
+        font-weight: 500;
+        padding: 10px;
+        display: block;
+        transition: 0.3s;
+        border-radius: 10px;
+    }
+    
+    .nav-link:hover {
+        background: rgba(255, 255, 255, 0.2);
+    }
+    
+   
+    .navbar-toggler {
+        border: none;
+        background: transparent;
+        font-size: 24px;
+        cursor: pointer;
+        color: white;
+    }
+    
 
-      }
-      
-      .nav-item {
-         text-align: center;
-       
-      }
+    .navbar-toggler:focus {
+        outline: none;
+    }
+
+    #moon {
+        display: block;
+        text-align: center;
+        font-size: 24px;
+        color: white;
+        cursor: pointer;
+        padding: 10px;
+        margin-top: 10px;
+        transition: 0.3s;
+    }
       .section-home .home-text .home-h2-onee{
         font-size: 40px;
         margin-top: 30px;
@@ -736,6 +793,74 @@ body{
 .section-skills{
     height: 120vh;
   }
+  .navbar-text-menu {
+    position: absolute;
+    top: 70px; 
+    right: 20px; 
+    width: 220px;
+    background: rgba(0, 0, 0, 0.8); 
+    backdrop-filter: blur(10px);
+    border-radius: 15px; 
+    padding: 15px 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s ease-in-out;
+    visibility: hidden;
+}
+
+
+.navbar-text-menu.show {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+}
+
+
+.nav-item {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.nav-link {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px;
+    display: block;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+.nav-link:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+
+.navbar-toggler {
+    border: none;
+    background: transparent;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+
+
+.navbar-toggler:focus {
+    outline: none;
+}
+
+#moon {
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 10px;
+    transition: 0.3s;
+}
 
 
 }
@@ -765,17 +890,74 @@ body{
         margin-top: 100px;
     }
 
-    .navbar-text-menu .nav {
-        flex-direction: column;
-        background-color:#333;
-        height: 300px;
-        width: 200px;
-        margin-left: auto;
-        border-radius: 50px;
-        margin-top: 40px;
-       
+    .navbar-text-menu {
+        position: absolute;
+        top: 70px; 
+        right: 20px; 
+        width: 220px;
+        background: rgba(0, 0, 0, 0.8); 
+        backdrop-filter: blur(10px);
+        border-radius: 15px; 
+        padding: 15px 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: all 0.3s ease-in-out;
+        visibility: hidden;
+    }
+    
+   
+    .navbar-text-menu.show {
+        opacity: 1;
+        transform: translateY(0);
+        visibility: visible;
+    }
+    
+   
+    .nav-item {
+        text-align: center;
+        margin: 10px 0;
+    }
+    
+    .nav-link {
+        color: white;
+        font-size: 18px;
+        text-decoration: none;
+        font-weight: 500;
+        padding: 10px;
+        display: block;
+        transition: 0.3s;
+        border-radius: 10px;
+    }
+    
+    .nav-link:hover {
+        background: rgba(255, 255, 255, 0.2);
+    }
+    
+   
+    .navbar-toggler {
+        border: none;
+        background: transparent;
+        font-size: 24px;
+        cursor: pointer;
+        color: white;
+    }
+    
 
-      }
+    .navbar-toggler:focus {
+        outline: none;
+    }
+
+    #moon {
+        display: block;
+        text-align: center;
+        font-size: 24px;
+        color: white;
+        cursor: pointer;
+        padding: 10px;
+        margin-top: 10px;
+        transition: 0.3s;
+    }
       .section-skills{
         height: 120vh;
       }
@@ -831,21 +1013,74 @@ body{
     .section-vesionary{
         height: 120vh;
     }
-    .navbar-text-menu .nav {
-        flex-direction: column;
-        background-color:#333;
-        height: 300px;
-        width: 200px;
-        margin-left: auto;
-        border-radius: 50px;
-       
+    .navbar-text-menu {
+        position: absolute;
+        top: 70px; 
+        right: 20px; 
+        width: 220px;
+        background: rgba(0, 0, 0, 0.8); 
+        backdrop-filter: blur(10px);
+        border-radius: 15px; 
+        padding: 15px 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: all 0.3s ease-in-out;
+        visibility: hidden;
+    }
+    
+   
+    .navbar-text-menu.show {
+        opacity: 1;
+        transform: translateY(0);
+        visibility: visible;
+    }
+    
+   
+    .nav-item {
+        text-align: center;
+        margin: 10px 0;
+    }
+    
+    .nav-link {
+        color: white;
+        font-size: 18px;
+        text-decoration: none;
+        font-weight: 500;
+        padding: 10px;
+        display: block;
+        transition: 0.3s;
+        border-radius: 10px;
+    }
+    
+    .nav-link:hover {
+        background: rgba(255, 255, 255, 0.2);
+    }
+    
+   
+    .navbar-toggler {
+        border: none;
+        background: transparent;
+        font-size: 24px;
+        cursor: pointer;
+        color: white;
+    }
+    
 
-      }
-      
-      .nav-item {
-         text-align: center;
-       
-      }
+    .navbar-toggler:focus {
+        outline: none;
+    }
+
+    #moon {
+        display: block;
+        text-align: center;
+        font-size: 24px;
+        color: white;
+        cursor: pointer;
+        padding: 10px;
+        margin-top: 10px;
+        transition: 0.3s;
+    }
 }
 
 
@@ -854,9 +1089,6 @@ body{
 
 @media only screen and (min-width: 576px) and (max-width: 767.50px){
 
-    /* .icon {
-        display: block !important;
-    } */
 
     .section-home .home-text .home-h2-onee{
         font-size: 40px;
@@ -887,21 +1119,74 @@ body{
         .section-vesionary{
             height: 120vh;
         }
-        .navbar-text-menu .nav {
-            flex-direction: column;
-            background-color:#333;
-            height: 300px;
-            width: 200px;
-            margin-left: auto;
-            border-radius: 50px;
-           
+        .navbar-text-menu {
+            position: absolute;
+            top: 70px; 
+            right: 20px; 
+            width: 220px;
+            background: rgba(0, 0, 0, 0.8); 
+            backdrop-filter: blur(10px);
+            border-radius: 15px; 
+            padding: 15px 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            opacity: 0;
+            transform: translateY(-10px);
+            transition: all 0.3s ease-in-out;
+            visibility: hidden;
+        }
+        
+       
+        .navbar-text-menu.show {
+            opacity: 1;
+            transform: translateY(0);
+            visibility: visible;
+        }
+        
+       
+        .nav-item {
+            text-align: center;
+            margin: 10px 0;
+        }
+        
+        .nav-link {
+            color: white;
+            font-size: 18px;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 10px;
+            display: block;
+            transition: 0.3s;
+            border-radius: 10px;
+        }
+        
+        .nav-link:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+        
+       
+        .navbar-toggler {
+            border: none;
+            background: transparent;
+            font-size: 24px;
+            cursor: pointer;
+            color: white;
+        }
+        
+    
+        .navbar-toggler:focus {
+            outline: none;
+        }
 
-          }
-          
-          .nav-item {
-             text-align: center;
-           
-          }
+        #moon {
+            display: block;
+            text-align: center;
+            font-size: 24px;
+            color: white;
+            cursor: pointer;
+            padding: 10px;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
 
 }
 
