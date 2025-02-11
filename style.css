@@ -8,7 +8,7 @@
 }
 
 .dark-theme{
-    --text--Color:black;
+    --text--Color:#fff;
     --nav--Hover :#fff;
     --background--Color:black;
     --Gray-Color:#808080;
@@ -19,6 +19,7 @@
 body{
     background-color:var(--background--Color);
     color:var(--text--Color); 
+    transition: all 0.3s ease-in-out;
 }
 
 
@@ -416,6 +417,7 @@ body{
 .section-projelers{
     height: 100%;
     background-color: var(--background--Color);
+    padding-block: 100px;
 }
 
 
@@ -678,16 +680,25 @@ body{
 
 @media only screen and (min-width:350px) and  (max-width:399px){
 
+    .section-skills{
+        height: 100%;
+    }
+
     .button-group{
         border: none;
     
     }
     .section-education .section-education-text .education-p{
-        width: 350px;
+        width: 320px;
     }
     .section-education{
         height: 100%;
     }
+
+    /* .section-projelers .button-group .custom-button{
+        font-size: 10px;
+    } */
+    
 
     .section-vesionary .section-vesionary-text h2{
         margin-top: 100px;
@@ -703,7 +714,10 @@ body{
         margin-top: 150px;
     }
     .custom-button{
-        font-size: 10px;
+        font-size: 7px;
+        position: relative;
+        right: 10px;
+    
     }
 
     .navbar-text-menu {
@@ -764,15 +778,13 @@ body{
         outline: none;
     }
 
+    .moon-item {
+        display: inline-block;
+        margin-left: 15px;
+    }
     #moon {
-        display: block;
-        text-align: center;
-        font-size: 24px;
-        color: var(--text--Color);
-        cursor: pointer;
-        padding: 10px;
-        margin-top: 10px;
-        transition: 0.3s;
+        position: static;
+        transform: none;
     }
       .section-home .home-text .home-h2-onee{
         font-size: 40px;
@@ -791,9 +803,15 @@ body{
 }
 
 
-@media only screen and (min-width: 400px) and (max-width: 427px){
+@media only screen and (min-width: 399px) and (max-width: 427px){
     .button-group{
         border: none;
+    
+    }
+    .custom-button{
+        font-size: 10px;
+        position: relative;
+        right: 10px;
     
     }
     .section-vesionary .section-vesionary-text h2{
@@ -885,15 +903,13 @@ body{
     outline: none;
 }
 
+.moon-item {
+    display: inline-block;
+    margin-left: 15px;
+}
 #moon {
-    display: block;
-    text-align: center;
-    font-size: 24px;
-    color: var(--text--Color);
-    cursor: pointer;
-    padding: 10px;
-    margin-top: 10px;
-    transition: 0.3s;
+    position: static;
+    transform: none;
 }
 
 
@@ -982,16 +998,7 @@ body{
         outline: none;
     }
 
-    #moon {
-        display: block;
-        text-align: center;
-        font-size: 24px;
-        color: var(--text--Color);
-        cursor: pointer;
-        padding: 10px;
-        margin-top: 10px;
-        transition: 0.3s;
-    }
+    
       .section-skills{
         height: 120vh;
       }
@@ -1015,6 +1022,14 @@ body{
         margin-top: 30px;
         margin-bottom: 20px;
         height: 350px;
+    }
+    .moon-item {
+        display: inline-block;
+        margin-left: 15px;
+    }
+    #moon {
+        position: static;
+        transform: none;
     }
 }
 
@@ -1105,15 +1120,13 @@ body{
         outline: none;
     }
 
+    .moon-item {
+        display: inline-block;
+        margin-left: 15px;
+    }
     #moon {
-        display: block;
-        text-align: center;
-        font-size: 24px;
-        color: var(--text--Color);
-        cursor: pointer;
-        padding: 10px;
-        margin-top: 10px;
-        transition: 0.3s;
+        position: static;
+        transform: none;
     }
 }
 
@@ -1211,15 +1224,13 @@ body{
             outline: none;
         }
 
+        .moon-item {
+            display: inline-block;
+            margin-left: 15px;
+        }
         #moon {
-            display: block;
-            text-align: center;
-            font-size: 24px;
-            color: var(--text--Color);
-            cursor: pointer;
-            padding: 10px;
-            margin-top: 10px;
-            transition: 0.3s;
+            position: static;
+            transform: none;
         }
 
 }
