@@ -1,10 +1,24 @@
 
+:root{
+    --text--Color:#fff;
+    --nav--Hover :#7e42ff;
+    --background--Color:#1e1e30;
+    --Gray-Color:#808080;
+    --Dark-Color:#333;
+}
 
+.dark-theme{
+    --text--Color:black;
+    --nav--Hover :#fff;
+    --background--Color:black;
+    --Gray-Color:#808080;
+    --Dark-Color:#333;
+}
 
 
 body{
-    background-color: #1e1e30; 
-    color: #fff; 
+    background-color:var(--background--Color);
+    color:var(--text--Color); 
 }
 
 
@@ -24,11 +38,10 @@ body{
 }
 .navbar-menu.move .navbar-title {
     font-family: 'Times New Roman', Times, serif;
-    /* color: ; */
 }
 
 .navbar-menu.move .navbar-text-menu ul a{
-    color:white;
+    color:var(--text--Color);
 }
 
 .navbar-menu.sticky-top {
@@ -42,20 +55,24 @@ body{
 
 .navbar-menu .navbar-title{
     text-decoration: none;
-    color: white;
+    color: var(--text--Color);
     font-size: clamp(24px , 2vw,40px);
-    /* font-size: 24px; */
+    
     font-weight: bold;
     margin-right: -100px;
 }
 
 
 .navbar-menu .navbar-text-menu ul a:hover{
-    color: #7e42ff;
+    color: var(--nav--Hover);
     transition: .3s;
 }
 
-
+.navbar-text-menu{
+    display: flex;
+    align-items: center;
+    
+}
 
 .navbar-text-menu ul {
     list-style: none;
@@ -69,11 +86,15 @@ body{
 
 .navbar-menu .navbar-text-menu ul a{
     text-decoration: none;
-    color: #fff;
+    color: var(--text--Color);
 }
 
 #moon{
-    font-size:30px ;
+    font-size:24px ;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    left: 440px;
 }
 
 
@@ -84,14 +105,14 @@ body{
 
 
 .section-home .home-text .home-h2-onee{
-    color: #fff;
+    color: var(--text--Color);
     font-size: 50px;
    
 }
 
 
 .section-home .home-text .home-h2-one{
-    color: #fff;
+    color: var(--text--Color);
     font-size: 50px;
     margin-bottom: 10px;
 }
@@ -105,20 +126,15 @@ body{
 
 .section-home {
     display: flex;
-    align-items: center; /* Dikey ortalama */
-    justify-content: center; /* Yatay ortalama */
-    min-height: 90vh; /* Ekranın tamamını kapsaması için */
+    align-items: center; 
+    justify-content: center; 
+    min-height: 90vh;
   }
 
 
-.section-home .home-text  h4 span{
-    color: #7e42ff;
-    font-size: 30px;
-}
-
 .section-home .home-text .home-text-p{
     max-width: 550px;
-    color: gray;
+    color: var(--Gray-Color);
     font-size: 20px;
     line-height: 30px;
    
@@ -128,7 +144,7 @@ body{
     width: 450px;
     height: 450px;
     border-radius: 50%;
-    border: 5px solid #7e42ff;
+    border: 5px solid var(--nav--Hover);
 }
 
 .section-home .profille-img{
@@ -138,7 +154,7 @@ body{
 
 .section-home .home-text a{
     background: linear-gradient(135deg, #c59ff4, #9d84f3);
-    color: white;
+    color: var(--text--Color);
     padding: 12px 30px;
     font-size: 16px;
     border: none;
@@ -180,6 +196,7 @@ body{
 
 .section-skills{
     height: 80vh;
+    background-color: var(--background--Color);
 }
 
 
@@ -194,12 +211,13 @@ body{
 }
 
 .section-skills-text p{
-  color: grey;
+  color: var(--Gray-Color);
 }
 
 
 
 /*****************************************************************/
+
 
 .section-skills .card-skills{
     margin: 20px auto; 
@@ -224,21 +242,21 @@ body{
 
 .card-text-icons {
     display: flex;
-    flex-wrap: wrap; /* Allows items to wrap */
-    justify-content: center; /* Centers items horizontally */
-    gap: 1rem; /* Adds space between items */
-    margin-top: 10px; /* Adds spacing between header and icons */
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 1rem; 
+    margin-top: 10px; 
   }
 
 
 .section-skills .card-skills .card-text-icons .card-items{
     display: inline-block;
-      background-color: #333; 
+      background-color: var(--Dark-Color); 
       color: #ced4da;
       padding: 8px 10px;
       border-radius: 5px; 
       margin: 5px;
-      border: 1px solid grey;
+      border: 1px solid var(--Gray-Color);
     
 }
 
@@ -301,8 +319,8 @@ body{
     font-size: 12px;
 }
 
-.fa-python{
-    color:yellow;
+.fa-git-alt{
+    color:rgb(167, 36, 36);
     font-size: 25px;
     display: flex;
     align-items: center;
@@ -310,25 +328,40 @@ body{
 }
 
 
-.fa-python span{
+.fa-git-alt span{
     color: #ced4da;
     margin-left: 7px;
     font-size: 12px;
 }
 
-.fa-database{
-   color: orange;
+.fa-github{
+   color: black;
     font-size: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.fa-database span{
+.fa-github span{
     color: #ced4da;
     margin-left: 7px;
     font-size: 12px;
 }
+
+.fa-sass{
+    color: pink;
+     font-size: 25px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+ 
+ .fa-sass span{
+     color: #ced4da;
+     margin-left: 7px;
+     font-size: 12px;
+ }
+
 
 /*****************************************************************/
 
@@ -342,7 +375,7 @@ body{
 }
 
 .section-vesionary .section-vesionary-text h2{
-    color: #fff;
+    color: var(--text--Color);
     font-weight: bold;
     font-size: 50px;
     margin-top: 30px;
@@ -360,8 +393,8 @@ body{
     border-radius: 10px;
     margin-top: 20px;
     width: 100%;
-    max-width: 700px; /* Kutunun maksimum genişliği */
-    min-height: 200px; /* Minimum yükseklik */
+    max-width: 700px; 
+    min-height: 200px; 
     margin-left: auto;
     margin-right: auto;
     border: 1px solid #7e42ff;
@@ -374,7 +407,7 @@ body{
 }
 
 .section-vesionary .card-vesionary .vesionary-text .Visionary-p-text{
-    color: #fff;
+    color: var(--text--Color);
 }
 
 /****************************************************************/
@@ -382,6 +415,7 @@ body{
 
 .section-projelers{
     height: 100%;
+    background-color: var(--background--Color);
 }
 
 
@@ -390,7 +424,7 @@ body{
     margin-top: 30px;
 }
 .section-projelers .section-proje-text p{
-    color: grey;
+    color:var(--Gray-Color);
     margin-top: 15px;
     text-align: center;
 }
@@ -403,7 +437,7 @@ body{
 }
 
 .vesionary-p2-text{
-    color:#fff;
+    color:var(--text--Color);
 }
 .custom-button {
     transition: all 0.3s ease-in-out;
@@ -428,7 +462,7 @@ body{
 
 .custom-button.active {
     border-bottom: 2px solid #6C63FF;
-    color: white;
+    color: var(--text--Color);
     transform: scale(1.1);
 }
 
@@ -474,15 +508,15 @@ body{
   }
 
   .card-body .card-title{
-    color: #fff;
+    color: var(--text--Color);
     margin-top: 20px;
   }
   .card-body .date{
-    color: gray;
+    color: var(--Gray-Color);
   }
 
   .card-body .projelers-p{
-    color: gray;
+    color: var(--Gray-Color);
     margin-top: 10px;
   }
 
@@ -502,7 +536,7 @@ body{
 
 
 .section-education .section-education-text h2{
-    color: #fff;
+    color: var(--text--Color);
 
 }
 
@@ -531,7 +565,7 @@ body{
 }
 .section-education .card-education .card-education-text .card-p2{
     margin: 5px 0 0 30px; 
-    color: gray;
+    color: var(--Gray-Color);
 }
 
 .section-education .card-education .card-education-text .card-p3{
@@ -563,7 +597,7 @@ body{
 }
   
 .contact-form {
-    background-color: #333;
+    background-color: var(--Dark-Color);
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -575,12 +609,12 @@ body{
 .btn-custom {
     background: linear-gradient(90deg, #a100ff, #ff0080);
     border: none;
-    color: white;
+    color: var(--text--Color);
 }
 .form-control {
     background-color: #444;
     border: 1px solid #555;
-    color: white;
+    color: var(--text--Color);
     max-width: 450px;
 }
 .form-control::placeholder {
@@ -616,7 +650,7 @@ body{
 }
 
 .footer-part .footer-text .footer-navbar .nav .nav-item a{
-    color: #fff;
+    color: var(--text--Color);
 }
 
 .footer-part .footer-text .footer-icons{
@@ -633,8 +667,8 @@ body{
   }
 
 .footer-icons a {
-  margin: 0 10px; /* Sağ ve sol tarafa 10px boşluk */
-  color: #fff;
+  margin: 0 10px;
+  color: var(--text--Color);
 }
 
 
@@ -702,7 +736,7 @@ body{
     }
     
     .nav-link {
-        color: white;
+        color: var(--text--Color);
         font-size: 18px;
         text-decoration: none;
         font-weight: 500;
@@ -722,7 +756,7 @@ body{
         background: transparent;
         font-size: 24px;
         cursor: pointer;
-        color: white;
+        color: var(--text--Color);
     }
     
 
@@ -734,7 +768,7 @@ body{
         display: block;
         text-align: center;
         font-size: 24px;
-        color: white;
+        color: var(--text--Color);
         cursor: pointer;
         padding: 10px;
         margin-top: 10px;
@@ -823,7 +857,7 @@ body{
 }
 
 .nav-link {
-    color: white;
+    color: var(--text--Color);
     font-size: 18px;
     text-decoration: none;
     font-weight: 500;
@@ -843,7 +877,7 @@ body{
     background: transparent;
     font-size: 24px;
     cursor: pointer;
-    color: white;
+    color: var(--text--Color);
 }
 
 
@@ -855,7 +889,7 @@ body{
     display: block;
     text-align: center;
     font-size: 24px;
-    color: white;
+    color: var(--text--Color);
     cursor: pointer;
     padding: 10px;
     margin-top: 10px;
@@ -920,7 +954,7 @@ body{
     }
     
     .nav-link {
-        color: white;
+        color: var(--text--Color);
         font-size: 18px;
         text-decoration: none;
         font-weight: 500;
@@ -940,7 +974,7 @@ body{
         background: transparent;
         font-size: 24px;
         cursor: pointer;
-        color: white;
+        color: var(--text--Color);
     }
     
 
@@ -952,7 +986,7 @@ body{
         display: block;
         text-align: center;
         font-size: 24px;
-        color: white;
+        color: var(--text--Color);
         cursor: pointer;
         padding: 10px;
         margin-top: 10px;
@@ -1043,7 +1077,7 @@ body{
     }
     
     .nav-link {
-        color: white;
+        color: var(--text--Color);
         font-size: 18px;
         text-decoration: none;
         font-weight: 500;
@@ -1063,7 +1097,7 @@ body{
         background: transparent;
         font-size: 24px;
         cursor: pointer;
-        color: white;
+        color: var(--text--Color);
     }
     
 
@@ -1075,7 +1109,7 @@ body{
         display: block;
         text-align: center;
         font-size: 24px;
-        color: white;
+        color: var(--text--Color);
         cursor: pointer;
         padding: 10px;
         margin-top: 10px;
@@ -1149,7 +1183,7 @@ body{
         }
         
         .nav-link {
-            color: white;
+            color: var(--text--Color);
             font-size: 18px;
             text-decoration: none;
             font-weight: 500;
@@ -1169,7 +1203,7 @@ body{
             background: transparent;
             font-size: 24px;
             cursor: pointer;
-            color: white;
+            color: var(--text--Color);
         }
         
     
@@ -1181,7 +1215,7 @@ body{
             display: block;
             text-align: center;
             font-size: 24px;
-            color: white;
+            color: var(--text--Color);
             cursor: pointer;
             padding: 10px;
             margin-top: 10px;
@@ -1207,6 +1241,9 @@ body{
    .section-home .profille-img img{
     margin-bottom: 40px;
    }
+   #moon{
+    left: 120px;
+}
 
 }
 
@@ -1217,4 +1254,17 @@ body{
         margin-top: 20px;
         } 
 
+        #moon{
+            font-size:24px ;
+            cursor: pointer;
+            position: relative;
+            display: flex;
+            left: 240px;
+        }
+}
+
+@media only screen and (min-width: 1200px){
+    #moon{
+        left: 340px;
+    }
 }
