@@ -21,6 +21,7 @@ const product = {
         { image: "resim/graphit.png", tagsp1: "HTML", tagsp2: "SASS", tagsp3: "JavaScript", title: "Graphit", date: "2024-Aralık",link:"https://graphitt.netlify.app/", projelers: "Graphit,Bu projede SASS kullanımını ve onla beraber Javascript kullanımını pekiştirdim." },
         { image: "resim/Portofolio.png", tagsp1: "HTML", tagsp2: "CSS", tagsp3: "", title: "Portfolio", date: "2023-Aralık", link: "https://emir-profil-card.netlify.app/", projelers: "Portfolio,stajımda bana verilen ilk projedir." },
         { image: "resim/film-sitesi.png", tagsp1: "HTML", tagsp2: "CSS", tagsp3: "", title: "Film-sitesi", date: "2023-Mayis", link: "https://filmm-web-sitesi.netlify.app/", projelers: "Film-Web-Sitesi, Bu site yazilama basladigimda ogrendigim basit bir film sitesidir.(Kullanimi yoktur.)" },
+        { image: "resim/fasco.png", tagsp1: "HTML", tagsp2: "CSS", tagsp3: "SASS",tagsp4:"JavaScript", title: "FASCO", date: "2025-Ağustos", link: "https://fascoo.netlify.app/", projelers: "Yakında Sizlerle" },
     ],
     "WEB-APPS": [
         { image: "resim/graphit.png", tagsp1: "HTML", tagsp2: "SASS", tagsp3: "JavaScript", title: "Graphit", date: "2024-Aralık",link:"https://graphitt.netlify.app/", projelers: "Graphit,Bu projede SASS kullanımını ve onla beraber Javascript kullanımını pekiştirdim." },
