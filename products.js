@@ -10,6 +10,7 @@ const product = {
         { image: "resim/Portofolio.png", tagsp1: "HTML", tagsp2: "CSS", tagsp3: "", title: "Portfolio", date: "2023-Aralık", link: "https://emir-profil-card.netlify.app/", projelers: "Portfolio,stajımda bana verilen ilk projedir." },
         { image: "resim/graphit.png", tagsp1: "HTML", tagsp2: "SASS", tagsp3: "JavaScript", title: "Graphit", date: "2024-Aralık",link:"https://graphitt.netlify.app/", projelers: "Graphit,Bu projede SASS kullanımını ve onla beraber Javascript kullanımını pekiştirdim." },
         { image: "resim/KoruOtel.png", tagsp1: "HTML", tagsp2: "CSS", tagsp3: "", title: "Koru Otel", date: "2024-Temmuz", link: "http://koruotellprojesi.netlify.app", projelers: "Koru Otel,stajımda bana verilen ilk projedir." },
+        { image: "resim/fasco.png", tagsp1: "HTML", tagsp2: "CSS", tagsp3: "SASS",tagsp4:"JavaScript", title: "FASCO", date: "2025-Ağustos", link: "https://fascoo.netlify.app/", projelers: "Yakında Sizlerle" },
     ],
     "WEBSITE": [
         { image: "resim/Sandbox.png", tagsp1: "HTML", tagsp2: "CSS", tagsp3: "Bootstrap", title: "Sandbox", date: "2024-Mayıs", link: "https://sandboxx-web.netlify.app/", projelers: "Sandbox, bootstrap ile oluşturmuş olduğum ilk mobile duyarlı projemdir." },
@@ -51,6 +52,7 @@ const renderProducts = (category)=>{
                         <span class="tags-p1">${product.tagsp1}</span>
                         <span class="tags-p1">${product.tagsp2}</span>
                         ${product.tagsp3 ? `<span class="tags-p1">${product.tagsp3}</span>` : ''}
+                         ${product.tagsp4 ? `<span class="tags-p1">${product.tagsp4}</span>` : ''}
                     </div>
                     <h5 class="card-title">${product.title}</h5>
                     <span class="date">${product.date}</span>
